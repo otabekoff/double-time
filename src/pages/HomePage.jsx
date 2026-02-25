@@ -1,4 +1,3 @@
-import "./styles/globals.css";
 import AppHeader from "@/components/header/AppHeader";
 import HeroSection from "@/components/hero/HeroSection";
 import TableSection from "@/components/table/TableSection";
