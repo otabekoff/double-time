@@ -1,10 +1,7 @@
 import React from 'react'
 
 import "./articles.css";
-import ArticleCard from "./ArticleCard";
-import a1 from "../../assets/a1.jpg";
-import a2 from "../../assets/a2.jpg";
-import a3 from "../../assets/a3.jpg";
+// import ArticleCard from "./ArticleCard";
 
 export default function Articles() {
   return (
@@ -18,7 +15,7 @@ export default function Articles() {
 
         <div className="articles__grid">
           <ArticleCard
-            img={a1}
+            img={"/maldives.jpg"}
             category="Design"
             title="Modern UI Trends in 2026"
             desc="Explore the latest UI patterns and visual trends that are shaping modern web interfaces."
@@ -27,7 +24,7 @@ export default function Articles() {
           />
 
           <ArticleCard
-            img={a2}
+            img={"/beautiful.jpg"}
             category="Development"
             title="Building Scalable React Apps"
             desc="Best practices for structuring large React applications with performance in mind."
@@ -36,7 +33,7 @@ export default function Articles() {
           />
 
           <ArticleCard
-            img={a3}
+            img={"/island.webp"}
             category="Performance"
             title="Speed Optimization Techniques"
             desc="Improve your website speed with advanced optimization and best coding practices."
