@@ -1,9 +1,31 @@
 import React from 'react'
+import "./table.css";
 
-const TableSection = () => {
+export default function TableSection() {
   return (
-    <div>TableSection</div>
-  )
-}
+    <section className="table-section">
+      <div className="table-section__inner">
+        <h2 className="table-section__title">Table</h2>
 
-export default TableSection
+        <div className="custom-table">
+          <div className="cell"></div>
+          <div className="cell"></div>
+          <div className="cell"></div>
+
+          <div className="cell"></div>
+          <div className="cell"></div>
+          <div className="cell"></div>
+
+          <div className="cell"></div>
+          <div className="cell"></div>
+          <div className="cell"></div>
+
+          <div className="cell"></div>
+          <div className="cell"></div>
+          <div className="cell"></div>
+        </div>
+
+      </div>
+    </section>
+  );
+}

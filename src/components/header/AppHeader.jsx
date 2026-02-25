@@ -1,9 +1,27 @@
 import React from 'react'
+import "./header.css";
 
-const AppHeader = () => {
+export default function AppHeader() {
   return (
-    <div>AppHeader</div>
-  )
-}
+    <header className="app-header">
+      <div className="app-header__inner">
+        <div className="app-header__logo">Logo</div>
 
-export default AppHeader
+        <nav className="app-header__nav">
+          <a className="app-header__link" href="#">
+            Home
+          </a>
+          <a className="app-header__link" href="#">
+            Pricing
+          </a>
+          <a className="app-header__link" href="#">
+            Futures 
+          </a>
+          <a className="app-header__link" href="#">
+            Articles
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+}

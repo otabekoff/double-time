@@ -1,0 +1,121 @@
+.articles {
+    background: #f8f9fc;
+    padding: 80px 0;
+    }
+
+.articles__container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    }
+
+.articles__header {
+    text-align: center;
+    margin-bottom: 40px;
+    }
+
+.articles__header h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
+    }
+
+.articles__header p {
+    color: #666;
+    font-size: 14px;
+    }
+
+.articles__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    }
+
+.articleCard {
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    }
+
+.articleCard:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+    }
+
+.articleCard__image {
+    position: relative;
+    overflow: hidden;
+    }
+
+.articleCard__image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.4s;
+    }
+
+.articleCard:hover .articleCard__image img {
+    transform: scale(1.05);
+    }
+
+.articleCard__badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #7f00ff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    }
+
+.articleCard__content {
+    padding: 20px;
+    flex: 1;
+    }
+
+.articleCard__content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #222;
+    }
+
+.articleCard__content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+    }
+
+.articleCard__meta {
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    }
+
+.articleCard__btn {
+    border: none;
+    background: #3f5cff;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+.articleCard__btn:hover {
+    background: #2c46d6;
+    }
+
+@media (max-width: 900px) {
+    .articles__grid {
+        grid-template-columns: 1fr;
+    }
+    }

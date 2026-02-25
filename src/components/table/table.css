@@ -1,0 +1,47 @@
+.table-section {
+    background: #ffffff;
+    padding: 60px 0;
+    }
+
+.table-section__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    }
+
+.table-section__title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #222;
+    }
+
+.custom-table {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #333;
+
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+
+.cell {
+    height: 50px;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    }
+
+.cell:nth-child(3n) {
+    border-right: none;
+    }
+
+.cell:nth-last-child(-n + 3) {
+    border-bottom: none;
+    }
+
+@media (max-width: 600px) {
+    .custom-table {
+        width: 100%;
+    }
+    }
