@@ -1,13 +1,12 @@
-import React from 'react'
+import React from "react";
 
 import "./articles.css";
-// import ArticleCard from "./ArticleCard";
+import ArticleCard from "./ArticleCard";
 
 export default function Articles() {
   return (
     <section className="articles">
       <div className="articles__container">
-
         <div className="articles__header">
           <h2>Latest Articles</h2>
           <p>Insights, tutorials and web development tips from our team.</p>
@@ -41,7 +40,6 @@ export default function Articles() {
             date="March 2026"
           />
         </div>
-
       </div>
     </section>
   );
